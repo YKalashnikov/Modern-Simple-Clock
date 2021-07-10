@@ -106,3 +106,22 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*  Change Color Base on the Color Tabs */
+
+const green = document.getElementById('green'),
+    red = document.getElementById('red'),
+    blue = document.getElementById('blue')
+
+green.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--hue-color', '140')
+})   
+
+blue.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--hue-color', '240')
+})   
+red.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--hue-color', '5')
+})   
+

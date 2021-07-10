@@ -4,7 +4,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  --hue-color: 240;
+  --hue-color: 300;
 
   --first-color: hsl(var(--hue-color), 53%, 49%);
   --title-color: hsl(var(--hue-color), 53%, 15%);
@@ -229,7 +229,13 @@ a {
   z-index: var(--z-normal);
 }
 
-.clock__logo {
+.tab-colors {
+  width: max-content;
+  justify-self: center;
+}
+
+.tab-colors ul {
+  display: flex;
   width: max-content;
   justify-self: center;
   margin-bottom: var(--mb-2-5);
@@ -237,10 +243,37 @@ a {
   font-weight: var(--font-medium);
   color: var(--text-color-light);
   transition: .3s;
+  list-style-type: none;
 }
 
-.clock__logo:hover {
-  color: var(--first-color);
+.tab-colors ul li {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+ #red {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:rgba(255, 0, 0, 0.418);
+}
+ #green {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:rgba(0, 128, 0, 0.432);
+}
+ #blue {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:rgba(0, 0, 255, 0.434);
+}
+
+.tab-colors ul li:hover {
+  transform: scale(1.1);
 }
 
 .clock__text {
